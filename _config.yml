@@ -18,16 +18,16 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Sisyphus
+email: chwingwong@outlook.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  What can be asserted without evidence 
+  can sole be dismissed without evidence.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
 github_username:  chwingwong
+locale: "zh"
+comments: true
 
 # Build settings
 markdown: kramdown
@@ -37,6 +37,12 @@ permalink: /:categories/:title/
 paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+
+comments:
+  provider  : "staticman_v2"
+  staticman:
+    branch    : "master"
 
 include:
   - _pages
@@ -53,7 +59,13 @@ plugins:
 author:
   name   : "Wang zhiming"
   avatar : "/assets/images/bio-photo.jpg"
-  bio    : "My awesome biography constrained to a sentence or two goes here."
+  bio    : "What can be asserted without evidence can sole be dismissed without evidence."
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chwingwong"
+
+footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
