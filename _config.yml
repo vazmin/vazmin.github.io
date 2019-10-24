@@ -28,6 +28,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  chwingwong
 locale: "zh"
 comments: true
+search: true
 
 # Build settings
 markdown: kramdown
@@ -38,11 +39,11 @@ paginate: 5 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
-
+repository: ChwingWong/chwingwong.github.com
 comments:
-  provider  : "staticman_v2"
+  provider: "staticman_v2"
   staticman:
-    branch    : "master"
+    branch: "master"
 
 include:
   - _pages
