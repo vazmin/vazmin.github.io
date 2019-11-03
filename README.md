@@ -1,2 +1,2 @@
-# chwingwong.github.com
-bar
+# Vazmin Blog
+
