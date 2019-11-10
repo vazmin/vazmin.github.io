@@ -5,6 +5,7 @@ categories:
   - java
 tags:
   - mybatis
+  - TypeHandler
 ---
 
 ## 需求
