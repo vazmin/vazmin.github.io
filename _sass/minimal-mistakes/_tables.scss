@@ -7,7 +7,7 @@ table {
   margin-bottom: 1em;
   width: 100%;
   font-family: $global-font-family;
-  font-size: $type-size-6;
+  font-size: $type-size-5;
   border-collapse: collapse;
   overflow-x: auto;
 
@@ -16,24 +16,24 @@ table {
   }
 }
 
-thead {
-  background-color: $border-color;
-  border-bottom: 2px solid mix(#000, $border-color, 25%);
-}
 
 th {
-  padding: 0.5em;
-  font-weight: bold;
-  text-align: left;
+  font-weight: 600;
+  padding: 6px 13px;
+  border: 1px solid $border-color;
 }
 
 td {
-  padding: 0.5em;
-  border-bottom: 1px solid mix(#000, $border-color, 25%);
+  padding: 6px 13px;
+  border: 1px solid $border-color;
 }
 
 tr,
 td,
 th {
   vertical-align: middle;
+}
+
+table tr:nth-child(2n) {
+  background-color: #f6f8fa;
 }
