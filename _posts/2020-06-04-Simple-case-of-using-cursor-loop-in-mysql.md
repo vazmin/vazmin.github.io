@@ -30,7 +30,27 @@ tags:
 | 276 | 46ac9f06@foo.bar | 2020-04-13 16:33:09 |      0 |
 | 217 | 9b8c4a14@foo.bar | 2019-12-17 12:22:27 |      0 |
 
-下面使用复合语句来修复数据
+一般做法
+
+```sql
+UPDATE user_repeat 
+SET locked = 1 
+WHERE
+ id IN (
+ SELECT
+  id 
+ FROM
+  ( SELECT * FROM user_repeat ) a
+  LEFT JOIN ( SELECT email, MAX( create_time ) max_create_time 
+    FROM user_repeat GROUP BY email ) b ON a.email = b.email 
+ WHERE
+  a.create_time != b.max_create_time 
+ )
+```
+
+
+下面使用复合语句
+
 
 ```sql
 DROP PROCEDURE if exists curdemo ;
