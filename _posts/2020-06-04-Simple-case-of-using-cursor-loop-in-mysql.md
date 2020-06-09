@@ -33,16 +33,16 @@ tags:
 一般做法
 
 ```sql
-UPDATE user_repeat 
+UPDATE email_xxx 
 SET locked = 1 
 WHERE
  id IN (
  SELECT
   id 
  FROM
-  ( SELECT * FROM user_repeat ) a
+  ( SELECT * FROM email_xxx ) a
   LEFT JOIN ( SELECT email, MAX( create_time ) max_create_time 
-    FROM user_repeat GROUP BY email ) b ON a.email = b.email 
+    FROM email_xxx GROUP BY email ) b ON a.email = b.email 
  WHERE
   a.create_time != b.max_create_time 
  )
