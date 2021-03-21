@@ -127,7 +127,7 @@ plugins:
 author:
   name   : "Wang zhiming"
   avatar : "/assets/images/bio-photo.png"
-  bio    : "What can be asserted without evidence can sole be dismissed without evidence."
+  bio    : "Software Engineer & Java / Golang / Angular Developer"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"

@@ -3,4 +3,4 @@ permalink: /about/
 title: "About"
 ---
 
-Java & Golang & Angular Developer
+Software Engineer & Java / Golang / Angular Developer

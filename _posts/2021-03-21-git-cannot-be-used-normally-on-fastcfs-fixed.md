@@ -4,7 +4,8 @@ date: 2021-03-21 21:11:12 +0800
 categories:
   - Analytics
 tags:
-  - FastCFS Git
+  - FastCFS
+  - Git
 toc: true
 ---
 
